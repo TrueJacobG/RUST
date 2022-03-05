@@ -2,9 +2,13 @@
 //mod vars;
 //mod tuples;
 //mod arrays;
-mod vectors;
+//mod vectors;
+//mod cond;
+//mod loops;
+//mod funcs;
+//mod structs;
+mod enums;
 
 fn main() {
-    //the_print::run();
-    vectors::run();
+    enums::run();
 }
