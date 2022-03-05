@@ -1,3 +1,7 @@
+//mod the_print;
+mod vars;
+
 fn main() {
-    println!("Hello, world!");
+    //the_print::run();
+    vars::run();
 }
