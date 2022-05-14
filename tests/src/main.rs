@@ -1,14 +1,8 @@
-use std::time::Instant;
+use std::fs;
 
 fn main() {
-    let now = Instant::now();
+    let filename = "src/text.txt";
+    let file = fs::read_to_string(filename).expect("Failed to read");
 
-    let mut x: i64 = 0;
-
-    for i in 1..100_000_00 {
-        x += i;
-    }
-
-    println!("TIME: {}", now.elapsed().as_secs());
-    println!("NUMBER: {}", x);
+    println!("Text: {}", file);
 }
