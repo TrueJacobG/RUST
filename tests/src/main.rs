@@ -1,8 +1,8 @@
-use std::fs;
+mod with_file;
+
+use with_file::open_file_and_to_upper_letters;
 
 fn main() {
     let filename = "src/text.txt";
-    let file = fs::read_to_string(filename).expect("Failed to read");
-
-    println!("Text: {}", file);
+    open_file_and_to_upper_letters(filename, 3);
 }
