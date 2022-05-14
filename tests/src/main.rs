@@ -1,14 +1,8 @@
-use std::time::Instant;
+mod with_file;
+
+use with_file::open_file_and_to_upper_letters;
 
 fn main() {
-    let now = Instant::now();
-
-    let mut x: i64 = 0;
-
-    for i in 1..100_000_00 {
-        x += i;
-    }
-
-    println!("TIME: {}", now.elapsed().as_secs());
-    println!("NUMBER: {}", x);
+    let filename = "src/text.txt";
+    open_file_and_to_upper_letters(filename, 3);
 }

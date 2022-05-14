@@ -1,0 +1,6 @@
+cargo run
+cargo build
+cargo fmt
+cargo new <name>
+
+when you try to open file - cargo run works from your directory - you have to puth path on the way (without / on the beginnig)
